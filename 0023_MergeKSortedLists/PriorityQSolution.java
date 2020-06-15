@@ -1,5 +1,5 @@
 // time:    O(nlg(k)), where n is the total number of elements and k is the num of lists  
-// space:   O(1), space is recycled.
+// space:   O(n)
 
 // idea:    PQ Heap - Throw the first elements into a PQ and let it do some mumbo jumbo in lg(k) time for
 //          quick poll and add operations. Btw bubble up and down is lg(k) because in the worst case we
