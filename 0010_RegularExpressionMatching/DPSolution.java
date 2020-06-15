@@ -6,7 +6,7 @@
 //          i/j + 1 just means if the position before i/j. The logic is copy paste from the 
 //          other solution.
 
-class DPSolution {
+class Solution {
   public boolean isMatch(String text, String pattern) {
     boolean[][] matches = new boolean[text.length() + 1][pattern.length() + 1];
     matches[text.length()][pattern.length()] = true;

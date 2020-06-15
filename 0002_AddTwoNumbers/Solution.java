@@ -4,7 +4,7 @@
 // idea:    add as we would in kindergarten. Hold a variable for a carry, and watch out for edge
 //          cases like if the 2 lists are not of the same length.
 
-public class Solution {
+class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode pointer1 = l1;
     ListNode pointer2 = l2;
