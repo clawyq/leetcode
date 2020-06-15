@@ -13,10 +13,10 @@ class Solution {
       public int compare(ListNode n1, ListNode n2) {
         return n1.val - n2.val;
       }
-    }
+    };
     PriorityQueue<ListNode> pq = new PriorityQueue<>(cmp);
-    for (int i = 0; i < lists.length; i ++) {
-      pq.add(lists[i]);
+    for (int i = 0; i < lists.length; i++) {
+      if (lists[i] != null) pq.add(lists[i]);
     }
     ListNode sol = new ListNode(0), currPtr = sol;
     while (!pq.isEmpty()) {
@@ -29,3 +29,4 @@ class Solution {
     }
     return sol.next;
   }
+}
