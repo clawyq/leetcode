@@ -2,10 +2,10 @@ class Solution:
   def twoSum(self, nums: List[int], target: int) -> List[int]:
     solutionList: List[int] = []
     complementMap: Dict[int, int] = {}
-    for index in range(len(nums)):
-      complement: int = target - nums[index]
+    for i, num in enumerate(nums):
+      complement: int = target - num
       if complement in complementMap:
-        solutionList = [complementMap[complement], index]
+        solutionList = [complementMap[complement], i]
         break;
-      complementMap[nums[index]] = index
+      complementMap[nums[i]] = i
     return solutionList
