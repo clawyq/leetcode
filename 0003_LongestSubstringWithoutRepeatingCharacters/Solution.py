@@ -11,4 +11,3 @@ class Solution:
       seen[char] = rightWin
       longest = max(longest, rightWin - leftWin + 1)
     return longest
-        
